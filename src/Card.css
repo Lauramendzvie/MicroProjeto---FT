@@ -1,0 +1,121 @@
+.cards-corpo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: radial-gradient(circle, rgba(235, 255, 153, 1) 0%, rgba(251, 251, 63, 1) 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cards-corpo > div {
+  background: #fffdf6;
+  border: 2px solid #d2e904;
+  border-radius: 18px;
+  width: 270px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(241, 195, 57, 0.2);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.cards-corpo > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(241, 195, 57, 0.4);
+}
+
+.ImagemProduto {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddff1e;
+  box-shadow: 0 2px 6px rgba(225, 255, 0, 0.1);
+}
+
+.CardTitle {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin: 0.8rem 0 0.3rem;
+}
+
+.descrição-produto {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+#Comprar,
+#Favoritar {
+  background: linear-gradient(135deg, #bdce02, #dfed48);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0.3rem;
+
+  box-shadow: 0 2px 5px rgba(244, 197, 66, 0.4);
+}
+
+#Comprar:hover,
+#Favoritar:hover {
+  background: linear-gradient(135deg, #bdce02, #dfed48);
+  transform: scale(1.05);
+}
+
+#Favoritar {
+  background: linear-gradient(135deg, #bdce02, #dfed48);
+  color: #ffffff;
+}
+
+#Favoritar:hover {
+  background: linear-gradient(135deg, #bdce02, #dfed48);
+  color: #ffffff;
+}
+
+.lista-favoritos {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px dashed #ffff07;
+  box-shadow: 0 3px 8px rgba(241, 195, 57, 0.2);
+}
+
+.lista-favoritos h2 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.lista-favoritos p {
+  color: #5a4a1e;
+  font-style: italic;
+}
+
+.lista-favoritos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-favoritos li {
+  display: inline-block;
+  margin: 0.4rem 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #bdce02, #dfed48);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(241, 195, 57, 0.3);
+  transition: transform 0.2s;
+}
+
+.lista-favoritos li:hover {
+  transform: scale(1.05);
+}
